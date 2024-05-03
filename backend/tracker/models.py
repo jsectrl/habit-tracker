@@ -2,7 +2,7 @@ from django.db import models
 from django.core.validators import MaxValueValidator
 
 # Day Model
-    
+
 class Day(models.Model):
     name = models.CharField(max_length=10)
 
@@ -25,7 +25,6 @@ class Objective(models.Model):
     def __str__(self):
         return self.name
 
-
 # Habit Model
 class Habit(models.Model):
     name = models.CharField(max_length=200)
@@ -39,4 +38,3 @@ class Habit(models.Model):
 
     def __str__(self):
         return self.name
-
