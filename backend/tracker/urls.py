@@ -21,6 +21,7 @@ from tracker import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('objectives/', views.get_objectives),
+    path('objectives/create/', views.create_objective),
     path('habits/', views.get_habits),
     path('habits/create/', views.create_habit),
     path('habits/<str:day>/', views.get_habits_for_day),

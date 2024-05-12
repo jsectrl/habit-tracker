@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
-import CreateHabitForm from "../forms/CreateHabitForm";
-import CreateObjectiveForm from "../forms/CreateObjectiveForm";
+import CreateHabitForm from "../forms/createHabitForm";
+import CreateObjectiveForm from "../forms/createObjectiveForm";
 
 export default function Settings() {
   const [isHabitFormVisible, setHabitFormVisibility] = useState(false);

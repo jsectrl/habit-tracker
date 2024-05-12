@@ -44,7 +44,6 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
-
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -63,8 +62,17 @@ CORS_ALLOWED_METHODS = [
     'OPTIONS',
 ]
 
-CORS_ALLOWED_ORIGINS = [
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1'
+]
+
+CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000',
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    'http://localhost:3000'
 ]
 
 ROOT_URLCONF = 'tracker.urls'
