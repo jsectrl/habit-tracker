@@ -10,17 +10,17 @@ that encourages users to evolve and learn.
 
 ## Axios Integration
 
-[x] Removed all fetch() calls
-[x] Used axios() to retrieve Habit and Objective data from the Django API.
+[x] Removed all fetch() calls.  
+[x] Used axios() to retrieve Habit and Objective data from the Django API.  
 [X] Need to add POST request logic for register methods.
 
 # App Functionality
 
-[ ] Allow user to click on a Habit and display the clock-based tracker
-[ ] Allow user to see Habit/Objective statistics
+[ ] Allow user to click on a Habit and display the clock-based tracker.  
+[ ] Allow user to see Habit/Objective statistics.
 
 # Styling
 
-[ ] Design an appealing UI for homepage
-[ ] Style some effects that make the webpage feel more organic
-[ ] Style Habit/Objective Registration Forms
+[ ] Design an appealing UI for homepage.  
+[ ] Style some effects that make the webpage feel more organic.  
+[ ] Style Habit/Objective Registration Forms.
