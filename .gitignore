@@ -1,5 +1,5 @@
 # Ignore
-/backend/.tracker_venv
+/backend/.tracker_venv/
 /backend/db.sqlite3
 /backend/tracker/migrations/
 /backend/tracker/__pycache__
