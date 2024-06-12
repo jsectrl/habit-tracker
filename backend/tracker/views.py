@@ -1,5 +1,6 @@
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
+from django.shortcuts import get_object_or_404
 import json
 
 from .models import Habit, Objective, Day
@@ -56,6 +57,11 @@ def get_habits_for_day(request, day):
     habits = Habit.objects.filter(days__name__iexact=day)
     serializer = HabitSerializer(habits, many=True)
     return JsonResponse({'habits' : serializer.data}, safe=False)
+
+def get_habit_info_by_slug(request, slug):
+    habit = get_object_or_404(Habit, slug=slug)
+    serializer = HabitSerializer(habit)
+    return JsonResponse(serializer.data, safe=False)
 
 # Days
 def get_days(request):

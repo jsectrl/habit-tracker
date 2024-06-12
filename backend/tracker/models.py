@@ -23,7 +23,7 @@ class Objective(models.Model):
     created_at = models.DateField(auto_now_add=True)
     projected = models.DateField(default=None, null=True)
     time_spent = models.DurationField(default=timedelta(0), blank=True, null=True)
-    slug = models.CharField(max_length=300, blank=True)
+    slug = models.CharField(max_length=300, blank=True, null=True)
 
     def __str__(self):
         return self.name
@@ -44,7 +44,7 @@ class Habit(models.Model):
     days = models.ManyToManyField(Day)
     # Pomodoro Time Blocks
     pomodoros = models.PositiveSmallIntegerField(validators=[MaxValueValidator(10)], default=1)
-    slug = models.CharField(max_length=300, blank=True)
+    slug = models.CharField(max_length=300, blank=True, unique=True, null=True)
 
     def __str__(self):
         return self.name

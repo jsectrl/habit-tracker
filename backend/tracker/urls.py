@@ -24,6 +24,7 @@ urlpatterns = [
     path('objectives/create/', views.create_objective),
     path('habits/', views.get_habits),
     path('habits/create/', views.create_habit),
-    path('habits/<str:day>/', views.get_habits_for_day),
+    path('habits/day/<str:day>/', views.get_habits_for_day),
+    path('habits/<str:slug>/', views.get_habit_info_by_slug),
     path('days/', views.get_days)
 ]
