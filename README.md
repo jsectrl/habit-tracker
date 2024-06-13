@@ -16,7 +16,16 @@ that encourages users to evolve and learn.
 
 # App Functionality
 
-[ ] Allow user to click on a Habit and display the clock-based tracker.  
+## Habit Clock-Functionality
+
+[ ] Implement dynamic routes for each habit based on their slug.
+[ ] Display Habit data and style the page.
+[ ] Allow the time spent to be sent back to Django.
+[ ] Allow user to edit any of the Habits fields.
+[ ] Implement clock-based tracker.
+
+## Data Analysis
+
 [ ] Allow user to see Habit/Objective statistics.
 
 # Styling
